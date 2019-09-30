@@ -61,7 +61,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 }
 
 private extension UIView.ContentMode {
-    var name: String {
+    var name: String? {
         switch self {
         case .scaleToFill:
             return "scaleToFill"
@@ -89,6 +89,8 @@ private extension UIView.ContentMode {
             return "bottomLeft"
         case .bottomRight:
             return "bottomRight"
-        }
+        @unknown default:
+            return nil
+      }
     }
 }
