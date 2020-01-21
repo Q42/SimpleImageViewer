@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.platform = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
   s.name = "SimpleImageViewer"
   s.summary = "A snappy image viewer with zoom and interactive dismissal transition."
   s.requires_arc = true
@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/aFrogleap/SimpleImageViewer.git", :tag => s.version.to_s }
   s.source_files = "ImageViewer/**/*.{swift}"
   s.resources = ["ImageViewer/**/*.{xib}", "ImageViewer/**/*.{xcassets}"]
-  s.swift_version = '4.2'
+  s.swift_version = '5.1'
 
 end
